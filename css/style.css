@@ -4,67 +4,48 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Hero section */
+.hero {
+  height: 800px;
+  padding-top: 184px;
+  background-image: url('../assets/img/hero_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* header {
-  background: brown;
+.hero__title {
+  margin-bottom: 35px;
 }
 
-#header {
-  background: chartreuse;
+.hero__title h1 {
+  margin-bottom: 35px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+  color: #252b42;
 }
 
-.header {
-  background: darkblue;
-} */
-
-section {
-  width: 100%;
-  min-height: 300px;
-  border: 1px solid #333;
-  margin: 2rem 0;
-  padding: 2rem 1rem;
+.hero__title p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #737373;
 }
 
-.about {
-  background: rgb(27, 24, 197);
+.hero__buttons button {
+  padding: 10px 36px;
+  background: transparent;
+  border: 1px solid #00a0c1;
+  border-radius: 37px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: #00a0c1;
 }
-
-.projects {
-  background: rgb(14, 211, 56);
-}
-
-.contact {
-  background: rgb(231, 216, 11);
-}
-
-.link__top {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-}
-
-table {
-  width: 100%; /* Ширина таблицы */
-  border: 1px double black; /* Рамка вокруг таблицы */
-  border-collapse: collapse; /* Отображать только одинарные линии */
-}
-th {
-  background: #ccc; /* Цвет фона ячеек */
-  padding: 5px; /* Поля вокруг содержимого ячеек */
-  border: 1px solid black; /* Граница вокруг ячеек */
-}
-td {
-  padding: 5px; /* Поля вокруг содержимого ячеек */
-  border: 1px solid black; /* Граница вокруг ячеек */
-}
-
-/* .red {
-  color: red;
-}
-
-.blue {
-  color: blue;
-} */
