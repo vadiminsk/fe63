@@ -4,238 +4,214 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base target="_blank" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>FE63</title>
   </head>
   <body>
-    <header id="header" class="header">Content</header>
-    <!-- Ссылка <a> -->
-    <section>
-      <h2>Link</h2>
-      <a href="/">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="./test.html" target="_blank">Test page</a>
-      <a href="./assets/pdf/html-standard.pdf" download="new-file">Download</a>
-    </section>
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="wrapper">
+          <div class="header__logo">
+            <img src="./assets/img/Indicorp.svg" alt="Logo" />
+          </div>
+          <nav>
+            <div class="header__menu">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header__button">
+            <button>Press</button>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <!-- Button -->
-    <section>
-      <h2>Button</h2>
-      <button type="button">type button</button>
-      <button type="submit">type submit</button>
-      <button type="reset">type reset</button>
-    </section>
-
-    <!-- Audio -->
-    <section>
-      <h2>Audio</h2>
-      <audio controls>
-        <source src="horse.ogg" type="audio/ogg" />
-        <source
-          src="./assets/audio/Eminem - Lose Yourself HD _70k.mp3"
-          type="audio/mpeg"
-        />
-        Your browser does not support the audio element.
-      </audio>
-    </section>
-
-    <!-- Video -->
-    <section>
-      <h2>Video</h2>
-      <video width="320" height="240" controls>
-        <source src="./assets/video/video.mp4" type="video/mp4" />
-        <source src="movie.ogg" type="video/ogg" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
-
-    <!-- Iframe -->
-    <section>
-      <h2>Iframe</h2>
-      <iframe
-        src="https://www.youtube.com/watch?v=hgqHPLU-qIE"
-        style="height: 200px; width: 300px"
-        title="Iframe Example"
-      ></iframe>
-
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/kVgy1GSDHG8"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </section>
-
-    <!-- Forms -->
-    <section>
-      <h2>Forms</h2>
-      <h3>Input text</h3>
-      <form>
-        <label for="fname">First name:</label><br />
-        <input
-          type="text"
-          id="fname"
-          name="fname"
-          placeholder="Describe yourself here..."
-        /><br />
-        <label for="lname">Last name:</label><br />
-        <input type="text" id="lname" name="lname" />
-      </form>
-
-      <h3>Input radio</h3>
-      <form>
-        <input type="radio" id="html" name="fav_language" value="HTML" />
-        <label for="html">HTML</label><br />
-        <input type="radio" id="css" name="fav_language" value="CSS" />
-        <label for="css">CSS</label><br />
-        <input
-          type="radio"
-          id="javascript"
-          name="fav_language"
-          value="JavaScript"
-        />
-        <label for="javascript">JavaScript</label>
-      </form>
-
-      <h3>Input checkbox</h3>
-      <form>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        <label for="vehicle1"> I have a bike</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        <label for="vehicle2"> I have a car</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        <label for="vehicle3"> I have a boat</label>
-      </form>
-
-      <h3>Input types</h3>
-      <form action="/">
-        <!-- button – Кнопка с надписью.
-    checkbox – Флажок.
-    color – Виджет для выбора цвета.
-    date – Поле для ввода календарной даты (год, месяц, день).
-    datetime – Поле для ввода даты и времени.
-    datetime-local – Поле для ввода даты и местного времени.
-    email – Поле для ввода адреса электронной почты.
-    file – Поле для ввода имени файла, который пересылается на сервер.
-    hidden – Скрытое поле (не отображается на Web-странице).
-    image – Графическая кнопка отправки данных формы на сервер. Вместе с этим значением нужно использовать атрибут src, чтобы определить адрес изображения и атрибут alt для определения альтернативного текста. Можно также задать атрибуты width и height, чтобы определить размер изображения в пикселях.
-    month – Поле для ввода месяца и года.
-    number – Поле для ввода чисел.
-    password – Поле для ввода пароля.
-    radio – Переключатели (радио-кнопки).
-    range – Ползунок для ввода чисел в указанном диапазоне.
-    reset – Кнопка сброса данных формы в первоначальное состояние.
-    search – Поле для ввода строки поиска.
-    submit – Кнопка для отправки данных формы на сервер.
-    tel – Поле для ввода номера телефона.
-    text – Текстовое поле.
-    time – Поле для ввода времени.
-    url – Поле для ввода Web-адреса.
-    week – Поле для ввода номера недели и года. -->
-        <input type="submit" />
-        <input type="checkbox" />
-        <input type="color" />
-        <input type="date" />
-        <input type="email" />
-        <input type="file" />
-        <input type="number" />
-        <input type="password" />
-        <input type="range" />
-        <input type="reset" />
-        <input type="search" />
-        <input type="time" />
-      </form>
-
-      <h3>Select</h3>
-      <label for="cars">Choose a car:</label>
-
-      <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
-
-      <h3>Textarea</h3>
-      <label for="w3review">Review of W3Schools:</label>
-
-      <textarea
-        id="w3review"
-        name="w3review"
-        rows="4"
-        cols="50"
-        placeholder="Describe yourself here..."
-      >
-      </textarea>
-
-      <h3>Fieldset</h3>
-      <form action="/action_page.php">
-        <fieldset>
-          <legend>Personalia:</legend>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" /><br /><br />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" /><br /><br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" /><br /><br />
-          <label for="birthday">Birthday:</label>
-          <input type="date" id="birthday" name="birthday" /><br /><br />
-          <input type="submit" value="Submit" />
-        </fieldset>
-      </form>
-
-      <!-- Table -->
-      <section>
-        <table style="width: 100%; margin-bottom: 3rem">
-          <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-        </table>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Month</th>
-              <th>Savings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>January</td>
-              <td>$100</td>
-            </tr>
-            <tr>
-              <td>February</td>
-              <td>$80</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="5" style="text-align: right">Sum</td>
-              <td>$180</td>
-            </tr>
-          </tfoot>
-        </table>
+    <!-- main -->
+    <main>
+      <!-- overflow -->
+      <section class="section">
+        <div class="container">
+          <div class="section-overflow">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex
+            dolores sit quod unde ipsum atque explicabo accusantium magni aut
+            perspiciatis, praesentium, ullam repellat eveniet hic rerum dolorum
+            commodi quis ea consequuntur quos pariatur dolor cum illo!
+            Aspernatur, distinctio accusamus dicta nobis nisi nostrum in, beatae
+            saepe sunt id obcaecati vero quo! Veniam dolores nobis rem nihil
+            itaque necessitatibus explicabo, aspernatur ipsum officiis! A
+            molestias id repellendus. Beatae incidunt nobis numquam inventore in
+            hic accusantium saepe, dolores repellendus possimus placeat!
+          </div>
+        </div>
       </section>
-    </section>
 
-    <!-- CSS -->
-    <div class="red blue">red-blue</div>
-    <div class="blue red">blue-red</div>
+      <!-- block model -->
+      <section class="section">
+        <div class="container">
+          <div class="section-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex
+            dolores sit quod unde ipsum atque explicabo accusantium magni aut
+            perspiciatis, praesentium, ullam repellat eveniet hic rerum dolorum
+            commodi quis ea consequuntur quos pariatur dolor cum illo!
+            Aspernatur, distinctio accusamus dicta nobis nisi nostrum in, beatae
+            saepe sunt id obcaecati vero quo! Veniam dolores nobis rem nihil
+            itaque necessitatibus explicabo, aspernatur ipsum officiis! A
+            molestias id repellendus. Beatae incidunt nobis numquam inventore in
+            hic accusantium saepe, dolores repellendus possimus placeat!
+          </div>
+        </div>
+      </section>
+
+      <!-- display -->
+      <section class="section">
+        <div class="container">
+          <div class="section-display">
+            <h3>H3</h3>
+            <p>Paragraph</p>
+            <a href="/">Link</a>
+            <span>SPAN</span>
+            <button>BUTTON</button>
+            <article>ARTICLE</article>
+          </div>
+        </div>
+      </section>
+
+      <!-- float -->
+      <section class="section">
+        <div class="container">
+          <div class="section-float">
+            <img src="./assets/img/advice-1.png" alt="" class="img-left" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis consectetur, iste excepturi dicta tempora molestiae
+              ipsam nam, totam aspernatur similique asperiores magnam dolores
+              commodi harum! Consequuntur, eum ad quo qui asperiores aliquam
+              repellendus quasi saepe a, nostrum reprehenderit temporibus iste
+              impedit exercitationem ratione ipsa magnam! Optio ipsam id eveniet
+              nobis, ipsum officiis distinctio vel sit inventore ut eum eaque,
+              natus incidunt, tempora excepturi officia laboriosam adipisci
+              quaerat nam. Alias sint commodi voluptatem iure assumenda omnis
+              perspiciatis dignissimos magni! Accusamus dicta dolore minus,
+              assumenda omnis autem eaque non voluptatum sunt nemo expedita
+              magni magnam tempora ea aspernatur, impedit, consectetur
+              laudantium numquam?
+            </p>
+            <hr />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint non
+              porro provident blanditiis voluptatem assumenda, id fugiat
+              deleniti ullam? Debitis, reprehenderit eligendi? Debitis nostrum
+              laboriosam alias quia, fugiat et aliquid quis esse incidunt, est,
+              ex accusamus sunt dolorem deserunt magni suscipit tempore cumque
+              quos in mollitia! Quis cupiditate quo molestiae perferendis
+              consectetur sed, dolorem quiaciendis, ipsum eaque vero amet. Quas
+              placeat assumenda expedita eum dicta accusamus provident. Repellat
+              pariatur dolor, iste deserunt at numquam delectus impedit commodi
+              vel. Saepe ducimus praesentium expedita illum ea distinctio est ex
+              eum doloremque non id similique rerum magni doloribus perspiciatis
+              veritatis voluptates ipsum, animi omnis corporis aperiam maiores
+              laborum? Similique harum, exercitationem quibusdam, beatae aperiam
+              voluptatibus vero doloremque asperiores, ipsa debitis cum. Omnis
+              saepe libero animi consectetur autem?
+            </p>
+            <img src="./assets/img/advice-2.png" alt="" class="img-right" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint non
+              porro provident blanditiis voluptatem assumenda, id fugiat
+              deleniti ullam? Debitis, reprehenderit eligendi? Debitis nostrum
+              laboriosam alias quia, fugiat et aliquid quis esse incidunt, est,
+              ex accusamus sunt dolorem deserunt magni suscipit tempore cumque
+              quos in mollitia! Quis cupiditate quo molestiae perferendis
+              consectetur sed, dolorem quia fuga fugit adipisci quod blanditiis?
+              Recusandae inventore sint dolorem nemo iste veniam qui, omnis
+              alias! Rerum iste neque eveniet. Laudantium reprehenderit animi
+              unde pariatur quidem, quos suscipit minima reiciendis cumque
+              incidunt ut ab et velit consequuntur, consequatur atque recusandae
+              dolorem earum omnis nobis. Velit iste recusandae saepe architecto,
+              debitis dolore animi consequuntur veniam. Repellat, tempora animi
+              suscipit consectetur recusandae nostrum atque et fugit quisquam
+              explicabo tenetur! Recusandae nemo nostrum commodi nam tenetur
+              expedita, quibusdam tempore reiciendis, ipsum eaque vero amet.
+              Quas placeat assumenda expedita eum dicta accusamus provident.
+              Repellat pariatur dolor, iste deserunt at numquam delectus impedit
+              commodi vel. Saepe ducimus praesentium expedita illum ea
+              distinctio est ex eum doloremque non id similique rerum magni
+              doloribus perspiciatis veritatis voluptates ipsum, animi omnis
+              corporis aperiam maiores laborum? Similique harum, exercitationem
+              quibusdam, beatae aperiam voluptatibus vero doloremque asperiores,
+              ipsa debitis cum. Omnis saepe libero animi consectetur autem?
+            </p>
+          </div>
+          <div class="section-float">
+            <div class="block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+              harum laudantium corporis iusto amet expedita aspernatur minima,
+              tempore cupiditate eveniet minus tenetur aperiam molestias optio
+              consequuntur, beatae pariatur ad quidem.
+            </div>
+            <div class="block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+              harum laudantium corporis iusto amet expedita aspernatur minima,
+              tempore cupiditate eveniet minus tenetur aperiam molestias optio
+              consequuntur, beatae pariatur ad quidem.
+            </div>
+            <div class="block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+              harum laudantium corporis iusto amet expedita aspernatur minima,
+              tempore cupiditate eveniet minus tenetur aperiam molestias optio
+              consequuntur, beatae pariatur ad quidem.
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- flex -->
+      <section class="section">
+        <div class="container">
+          <div class="section-flex">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- flex 2 -->
+      <section class="section">
+        <div class="container">
+          <div class="section-flex-new">
+            <div class="block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
+              asperiores!
+            </div>
+            <div class="block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              nam neque? Rerum quisquam illum iure earum, incidunt magni facere
+              dolorum?
+            </div>
+            <div class="block">Lorem ipsum dolor sit.</div>
+            <div class="block">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              similique illo quasi laboriosam, aut eius, cumque tenetur omnis
+              sunt modi culpa totam blanditiis veniam explicabo aliquam rerum
+              maiores commodi, consectetur in repudiandae perferendis soluta
+              facere.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
   </body>
 </html>
