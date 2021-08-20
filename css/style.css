@@ -8,63 +8,95 @@ html {
   scroll-behavior: smooth;
 }
 
-/* header {
-  background: brown;
-}
-
-#header {
-  background: chartreuse;
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header {
-  background: darkblue;
-} */
-
-section {
-  width: 100%;
-  min-height: 300px;
-  border: 1px solid #333;
-  margin: 2rem 0;
-  padding: 2rem 1rem;
+  padding: 2rem 4rem;
+  background: rgba(100, 30, 200, 0.5);
 }
 
-.about {
-  background: rgb(27, 24, 197);
+.main {
+  flex: 1;
+  padding: 2rem 4rem;
+  background: rgba(200, 130, 100, 0.5);
 }
 
-.projects {
-  background: rgb(14, 211, 56);
+.footer {
+  padding: 2rem 4rem;
+  background: rgba(50, 70, 10, 0.5);
 }
 
-.contact {
-  background: rgb(231, 216, 11);
+/* Position sticky */
+.header {
+  height: 60vh;
 }
 
-.link__top {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+.main {
+  font-size: 3rem;
 }
 
-table {
-  width: 100%; /* Ширина таблицы */
-  border: 1px double black; /* Рамка вокруг таблицы */
-  border-collapse: collapse; /* Отображать только одинарные линии */
-}
-th {
-  background: #ccc; /* Цвет фона ячеек */
-  padding: 5px; /* Поля вокруг содержимого ячеек */
-  border: 1px solid black; /* Граница вокруг ячеек */
-}
-td {
-  padding: 5px; /* Поля вокруг содержимого ячеек */
-  border: 1px solid black; /* Граница вокруг ячеек */
+.wrapper {
+  display: flex;
 }
 
-/* .red {
-  color: red;
+.wrap {
+  display: flex;
+  margin-top: 300px;
 }
 
-.blue {
-  color: blue;
-} */
+.aside {
+  padding: 2rem;
+  background: rgba(80, 10, 150, 0.6);
+}
+
+.aside .inner {
+  position: sticky;
+  top: 0;
+}
+
+.content {
+  background: rgba(80, 80, 100, 1);
+}
+
+form .form-item {
+  position: relative;
+  margin: 5rem;
+}
+
+form .form-item input {
+  height: 40px;
+  padding: 1rem 1.5rem;
+  color: #333;
+  font-size: 1rem;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+}
+
+form .form-item label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+
+form:focus-within label {
+  top: -10px;
+  color: #4949ee;
+  font-size: 0.875rem;
+}
+
+.block {
+  height: 200px;
+  width: 200px;
+  background: rgb(142, 69, 202);
+  margin: 1rem;
+}
+
+.block-position {
+  /* position: absolute; */
+}

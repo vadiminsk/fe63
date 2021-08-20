@@ -7,235 +7,155 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>FE63</title>
   </head>
-  <body>
-    <header id="header" class="header">Content</header>
-    <!-- Ссылка <a> -->
-    <section>
-      <h2>Link</h2>
-      <a href="/">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="./test.html" target="_blank">Test page</a>
-      <a href="./assets/pdf/html-standard.pdf" download="new-file">Download</a>
-    </section>
-
-    <!-- Button -->
-    <section>
-      <h2>Button</h2>
-      <button type="button">type button</button>
-      <button type="submit">type submit</button>
-      <button type="reset">type reset</button>
-    </section>
-
-    <!-- Audio -->
-    <section>
-      <h2>Audio</h2>
-      <audio controls>
-        <source src="horse.ogg" type="audio/ogg" />
-        <source
-          src="./assets/audio/Eminem - Lose Yourself HD _70k.mp3"
-          type="audio/mpeg"
-        />
-        Your browser does not support the audio element.
-      </audio>
-    </section>
-
-    <!-- Video -->
-    <section>
-      <h2>Video</h2>
-      <video width="320" height="240" controls>
-        <source src="./assets/video/video.mp4" type="video/mp4" />
-        <source src="movie.ogg" type="video/ogg" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
-
-    <!-- Iframe -->
-    <section>
-      <h2>Iframe</h2>
-      <iframe
-        src="https://www.youtube.com/watch?v=hgqHPLU-qIE"
-        style="height: 200px; width: 300px"
-        title="Iframe Example"
-      ></iframe>
-
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/kVgy1GSDHG8"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </section>
-
-    <!-- Forms -->
-    <section>
-      <h2>Forms</h2>
-      <h3>Input text</h3>
-      <form>
-        <label for="fname">First name:</label><br />
-        <input
-          type="text"
-          id="fname"
-          name="fname"
-          placeholder="Describe yourself here..."
-        /><br />
-        <label for="lname">Last name:</label><br />
-        <input type="text" id="lname" name="lname" />
-      </form>
-
-      <h3>Input radio</h3>
-      <form>
-        <input type="radio" id="html" name="fav_language" value="HTML" />
-        <label for="html">HTML</label><br />
-        <input type="radio" id="css" name="fav_language" value="CSS" />
-        <label for="css">CSS</label><br />
-        <input
-          type="radio"
-          id="javascript"
-          name="fav_language"
-          value="JavaScript"
-        />
-        <label for="javascript">JavaScript</label>
-      </form>
-
-      <h3>Input checkbox</h3>
-      <form>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        <label for="vehicle1"> I have a bike</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        <label for="vehicle2"> I have a car</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        <label for="vehicle3"> I have a boat</label>
-      </form>
-
-      <h3>Input types</h3>
-      <form action="/">
-        <!-- button – Кнопка с надписью.
-    checkbox – Флажок.
-    color – Виджет для выбора цвета.
-    date – Поле для ввода календарной даты (год, месяц, день).
-    datetime – Поле для ввода даты и времени.
-    datetime-local – Поле для ввода даты и местного времени.
-    email – Поле для ввода адреса электронной почты.
-    file – Поле для ввода имени файла, который пересылается на сервер.
-    hidden – Скрытое поле (не отображается на Web-странице).
-    image – Графическая кнопка отправки данных формы на сервер. Вместе с этим значением нужно использовать атрибут src, чтобы определить адрес изображения и атрибут alt для определения альтернативного текста. Можно также задать атрибуты width и height, чтобы определить размер изображения в пикселях.
-    month – Поле для ввода месяца и года.
-    number – Поле для ввода чисел.
-    password – Поле для ввода пароля.
-    radio – Переключатели (радио-кнопки).
-    range – Ползунок для ввода чисел в указанном диапазоне.
-    reset – Кнопка сброса данных формы в первоначальное состояние.
-    search – Поле для ввода строки поиска.
-    submit – Кнопка для отправки данных формы на сервер.
-    tel – Поле для ввода номера телефона.
-    text – Текстовое поле.
-    time – Поле для ввода времени.
-    url – Поле для ввода Web-адреса.
-    week – Поле для ввода номера недели и года. -->
-        <input type="submit" />
-        <input type="checkbox" />
-        <input type="color" />
-        <input type="date" />
-        <input type="email" />
-        <input type="file" />
-        <input type="number" />
-        <input type="password" />
-        <input type="range" />
-        <input type="reset" />
-        <input type="search" />
-        <input type="time" />
-      </form>
-
-      <h3>Select</h3>
-      <label for="cars">Choose a car:</label>
-
-      <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
-
-      <h3>Textarea</h3>
-      <label for="w3review">Review of W3Schools:</label>
-
-      <textarea
-        id="w3review"
-        name="w3review"
-        rows="4"
-        cols="50"
-        placeholder="Describe yourself here..."
-      >
-      </textarea>
-
-      <h3>Fieldset</h3>
-      <form action="/action_page.php">
-        <fieldset>
-          <legend>Personalia:</legend>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" /><br /><br />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" /><br /><br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" /><br /><br />
-          <label for="birthday">Birthday:</label>
-          <input type="date" id="birthday" name="birthday" /><br /><br />
-          <input type="submit" value="Submit" />
-        </fieldset>
-      </form>
-
-      <!-- Table -->
+  <body class="body">
+    <main>
+      <div class="wrap">
+        <div class="block"></div>
+        <div class="block block-position"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+    </main>
+    <!-- flex + position: sticky; -->
+    <!-- <header class="header">Header</header>
+    <main class="main">
+      <div class="wrapper">
+        <aside class="main-block aside">
+          <div class="inner">Aside panel</div>
+        </aside>
+        <section class="main-block content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab
+          doloribus distinctio repellendus, ut sunt cupiditate quos! Magni
+          tempore repellat vitae aliquid cumque saepe sapiente dolorem magnam
+          asperiores consequatur sint maiores, et officia. Temporibus suscipit
+          ut accusantium voluptatibus at rem mollitia maxime praesentium
+          aspernatur, ab exercitationem quo tempora sint eveniet quibusdam
+          aperiam. Quae voluptatem consequuntur iusto porro, distinctio
+          incidunt. Odio commodi similique, excepturi suscipit atque
+          reprehenderit quasi! Harum dicta quis amet culpa dignissimos, facilis
+          suscipit blanditiis cum officia repellendus nam aut corporis maiores
+          at! Ad, rem fugit id obcaecati placeat harum est officia vero,
+          provident, aut doloribus temporibus maxime culpa minima! Cum quo
+          mollitia reprehenderit ipsum iure blanditiis, soluta deleniti, minus
+          perferendis sit cumque repellendus expedita consequatur odit quis
+          animi modi consectetur quisquam dolor. Eos nihil consectetur aliquam
+          repudiandae, odit veniam, eligendi ipsa ducimus itaque dolorem libero
+          vitae, voluptatem molestiae! Praesentium atque iure ex porro saepe
+          dolores aliquid ab autem dolorem a repudiandae recusandae laborum
+          sint, minima alias assumenda magni molestias officiis blanditiis
+          repellendus suscipit earum. Repudiandae, ullam, vitae dolor quia optio
+          unde ipsa fuga esse est, voluptate ea voluptatum dolores officia iste?
+          Accusamus recusandae odit quisquam nihil quam, explicabo similique
+          provident error aliquid voluptates reiciendis? Officia cupiditate
+          omnis dignissimos quod facere quo alias unde repellendus accusantium
+          veritatis asperiores excepturi provident consequatur expedita illo
+          tempora dolorem aliquam cum, sapiente, minus pariatur nihil esse
+          quibusdam? Nesciunt culpa debitis praesentium modi numquam sapiente
+          rerum vero. Sint, voluptatum! Itaque ad saepe error magnam expedita?
+          Unde fugit reprehenderit deserunt cupiditate ut. Eos, voluptatum.
+          Placeat doloribus rem sed quibusdam at odit, quaerat enim magni
+          repellendus ullam vitae nulla. Facilis dolorem cupiditate ullam
+          deleniti inventore consequatur qui perspiciatis numquam tenetur enim
+          quis unde voluptas est maiores dicta, impedit magni amet! Nobis
+          voluptatum iure quo repellat? Tempora corporis officiis vero
+          repellendus porro. Eius praesentium quos distinctio quibusdam, ad
+          similique. Nam llo cum aut porro! Cum deserunt tenetur possimus
+          maiores ea ipsa, facere dolor ut aspernatur provident. Sequi quidem
+          fugiat, id, blanditiis nostrum dolore sit molestiae optio reiciendis
+          inventore, asperiores voluptas vero praesentium suscipit tenetur
+          tempore modi porro earum veniam. Dolorem nobis impedit minima possimus
+          maxime quae, esse expedita inventore consequuntur, veritatis
+          asperiores aut molestiae magnam ea dolores iure. Nostrum tempora, at
+          sit libero dignissimos accusantium consequatur sequi aliquam earum
+          commodi voluptatibus numquam neque est molestias maiores, fugit illum.
+          Dicta minus nulla quam numquam aperiam harum tempora eveniet id,
+          itaque dolore vel ex ab rerum sunt! Sunt, consectetur? Optio, quia?
+          Animi sit blanditiis consequuntur voluptas recusandae enim
+          perspiciatis facere assumenda nisi beatae! Dignissimos itaque sequi
+          impedit blanditiis dolore ut sed, tempora earum neque porro a ipsum
+          consequuntur ipsam inventore? Sed, cum enim! Deserunt quas cumque
+          similique amet debitis unde, totam recusandae, odit, eligendi officia
+          voluptates placeat maxime dolorem explicabo aperiam ducimus sequi
+          ullam incidunt distinctio. Placeat eius quibusdam illo vitae a
+          voluptate distinctio aliquam impedit sequi, iste dolores illum nam
+          molestiae aspernatur delectus! Dolores alias dolorem voluptatibus,
+          nostrum optio nam illo unde repellat quos, ea tenetur inventore harum,
+          cupiditate animi voluptatem aspernatur! Magni suscipit voluptatem
+          asperiores hic, quidem repellat beatae, unde ipsum maiores omnis saepe
+          totam harum dolor impedit incidunt! Deleniti minima nesciunt aliquid!
+          Voluptatibus dolor vel iure possimus pariatur natus. Fuga, error! At
+          illum deleniti odit rerum in dicta. Harum fugiat hic, ipsum ab odio
+          earum ipsa eius corrupti quos dignissimos quod aliquam praesentium et
+          amet! Placeat, veniam facere sint laborum recusandae modi blanditiis
+          consectetur quibusdam aliquam expedita itaque tenetur porro.
+          Voluptatibus nesciunt suscipit tempora iure iusto vitae, esse sequi.
+          Modi tempora vero possimus officia quod voluptate explicabo doloribus
+          libero iste voluptatibus blanditiis cumque quis quas, sit nostrum quia
+          voluptatum optio. Unde officiis eveniet minus natus ad vel perferendis
+          amet blanditiis, deleniti molestias quas vero omnis veritatis illum
+          error explicabo alias repudiandae dolorum, corrupti provident
+          accusantium nobis dicta libero? Dolores illum dolore asperiores
+          excepturi nulla repellendus a neque, in suscipit tempora, odio
+          eligendi officia repudiandae temporibus nostrum enim maxime molestiae
+          distinctio exercitationem! Possimus aliquid suscipit praesentium
+          doloremque quaerat modi esse incidunt, iste odio adipisci? Eaque
+          voluptatem odio consequatur nam quasi, quo aut optio voluptatibus
+          quia, totam, reprehenderit debitis ipsam unde? Iste odit doloremque
+          blanditiis, doloribus distinctio dolores eveniet voluptatem aspernatur
+          architecto eius eum pariatur hic cupiditate, labore harum tempora
+          quaerat officiis quia ullam eligendi fugit incidunt culpa. Magnam modi
+          provident debitis! Tempore laborum quaerat praesentium molestias
+          quibusdam ducimus amet corporis ea rerum atque! Eligendi nemo itaque,
+          laborum molestias mollitia, quae maiores neque eaque unde, libero
+          delectus tempore tempora accusamus labore odit dolorem quod dicta
+          sequi vero saepe dignissimos perspiciatis! Ullam minima odio obcaecati
+          debitis. Praesentium ipsum fugit ab minima quibusdam asperiores earum
+          quos, nisi molestias eligendi amet est laboriosam tenetur sequi quia
+          eum aliquid consequuntur repudiandae maiores dolores accusamus
+          possimus doloremque neque eaque! Excepturi consequuntur laudantium,
+          sequi voluptatem dignissimos sint ipsum. Dolores exercitationem odit
+          praesentium numquam. Rem debitis aliquid voluptatem voluptatum
+          necessitatibus animi hic enim quia deserunt magnam magni non ipsam
+          laborum est eaque assumenda officiis iusto vero, eius praesentium
+          dolorem ullam asperiores. Officiis dolorem, sit cum repellat aperiam
+          ipsa unde?
+        </section>
+      </div>
       <section>
-        <table style="width: 100%; margin-bottom: 3rem">
-          <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-        </table>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Month</th>
-              <th>Savings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>January</td>
-              <td>$100</td>
-            </tr>
-            <tr>
-              <td>February</td>
-              <td>$80</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="5" style="text-align: right">Sum</td>
-              <td>$180</td>
-            </tr>
-          </tfoot>
-        </table>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        dolorum minima sapiente soluta qui, numquam voluptatem magni dolorem
+        obcaecati eaque consequuntur alias enim! Ipsum laboriosam, animi,
+        suscipit veritatis cum sapiente iusto doloremque, velit nostrum modi
+        itaque voluptatem ipsam minima soluta molestias earum asperiores nulla
+        laudantium non nemo facilis. Porro quae sequi, voluptatum laudantium
+        animi eum aspernatur cum aperiam, facilis vitae tenetur harum. Doloribus
+        distinctio eos ea, dolorem dolores ad modi velit delectus. Obcaecati,
+        facere saepe minima maxime laboriosam quo eligendi corrupti sapiente vel
+        ea blanditiis placeat excepturi architecto labore officia quibusdam
+        quaerat sint dicta exercitationem vitae porro quod repellat dolores?
+        Deleniti, laudantium reprehenderit? Quo omnis earum praesentium
+        cupiditate ab mollitia tenetur, cum molestias laudantium deserunt
+        officia voluptate nesciunt. Earum, fugiat nisi a fugit sit saepe totam
+        reprehenderit necessitatibus laboriosam doloremque unde tempore id,
+        veniam, iusto perspiciatis blanditiis deserunt. Officia atque labore
+        vero, voluptates deleniti nisi suscipit impedit obcaecati? Deserunt rem
+        nulla debitis error repellendus praesentium autem sunt quasi possimus
+        dolor at ipsa labore minus accusamus tempore ullam impedit magni tempora
+        temporibus eum, ut sed! Sed, dolor non repudiandae inventore iste quia.
+        Enim obcaecati, eum minima est dolorem amet sequi temporibus quos
+        officiis recusandae harum? Obcaecati, vitae deleniti. Ratione, id nihil.
       </section>
-    </section>
+    </main>
+    <footer class="footer">
+      <p>Footer</p>
+    </footer> -->
 
-    <!-- CSS -->
-    <div class="red blue">red-blue</div>
-    <div class="blue red">blue-red</div>
+    <!-- Focus within -->
+    <form action="/">
+      <div class="form-item">
+        <input type="text" id="input_name" name="input_name" />
+        <label for="input_name">First name</label>
+      </div>
+    </form>
   </body>
 </html>
