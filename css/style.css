@@ -8,63 +8,207 @@ html {
   scroll-behavior: smooth;
 }
 
-/* header {
-  background: brown;
-}
-
-#header {
-  background: chartreuse;
-}
-
-.header {
-  background: darkblue;
-} */
-
 section {
-  width: 100%;
-  min-height: 300px;
-  border: 1px solid #333;
   margin: 2rem 0;
-  padding: 2rem 1rem;
 }
 
-.about {
-  background: rgb(27, 24, 197);
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.projects {
-  background: rgb(14, 211, 56);
+/* About */
+.about__title {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.contact {
-  background: rgb(231, 216, 11);
+.about__content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.link__top {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+.about__content .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding: 20px 25px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 }
 
-table {
-  width: 100%; /* Ширина таблицы */
-  border: 1px double black; /* Рамка вокруг таблицы */
-  border-collapse: collapse; /* Отображать только одинарные линии */
-}
-th {
-  background: #ccc; /* Цвет фона ячеек */
-  padding: 5px; /* Поля вокруг содержимого ячеек */
-  border: 1px solid black; /* Граница вокруг ячеек */
-}
-td {
-  padding: 5px; /* Поля вокруг содержимого ячеек */
-  border: 1px solid black; /* Граница вокруг ячеек */
+.about__content .item:not(:last-child) {
+  margin-right: 1rem;
 }
 
-/* .red {
-  color: red;
+.about__content .item > img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
-.blue {
-  color: blue;
-} */
+.about__content .item > p {
+  margin-bottom: 1.5rem;
+}
+
+.about__content .item > button {
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.layout .layout__block {
+  max-width: 200px;
+}
+
+.layout .layout__block img {
+  max-width: 100%;
+  height: auto;
+}
+
+.alignment .item {
+  max-width: 300px;
+  padding: 20px 25px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.alignment img {
+  max-width: 300px;
+  height: auto;
+}
+
+.svg {
+  margin-bottom: 50px;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: palevioletred;
+  color: whitesmoke;
+  padding: 10px;
+  margin: 30px auto;
+  transition: 0.5s ease;
+  border: 1px solid whitesmoke;
+}
+
+.translateblock:hover {
+  transform: translate(50px, 50px);
+}
+
+.transabs {
+  position: relative;
+}
+
+.transabs::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scaleblock:hover {
+  transform: scale(1.5, 1.5);
+  background-color: orangered;
+}
+.scaleskew:hover {
+  transform: skew(20deg, 10deg);
+  transform: skew(30deg);
+}
+
+.rotateblock:hover {
+  transform: rotate(45deg);
+}
+
+.originblock {
+  transform-origin: top left;
+  transform: rotate(0);
+  transition: 0.5s ease;
+}
+.originblock:hover {
+  transform-origin: top left;
+  transform: rotate(45deg);
+}
+
+.transitionicon {
+  font-size: 100px;
+  color: rgb(42, 206, 42);
+  transition: all 0.1s;
+}
+
+.transitionicon:hover {
+  font-size: 136px;
+  color: orange;
+  transition-property: font-size, color;
+  transition-duration: 0.5s, 1s;
+  transition-delay: 0.5s;
+}
+
+.svglist__item-phone::before {
+  content: '\f879';
+  font-family: 'Font awesome 5 Free';
+  font-size: 18px;
+  font-weight: 900;
+  color: palevioletred;
+  margin-right: 15px;
+}
+
+.shadowbox {
+  margin: 30px auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 40px;
+  /* border: 1px solid #d3d3d3; */
+  box-shadow: 5px 3px 40px 0px rgba(7, 3, 3, 0.5),
+    inset 5px 3px 50px 0px rgba(0, 0, 0, 0.5);
+  /* box-shadow: inset 5px 3px 50px 0px rgba(0, 0, 0, 0.5); */
+}
+
+audio {
+  display: block;
+  outline: none;
+  width: 800px;
+  margin: 30px auto;
+}
+
+.circle {
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+  position: relative;
+  animation-name: circle;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 2;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
+}
+
+.circle:hover {
+  animation-play-state: paused;
+}
+
+@keyframes circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 50%;
+    background-color: yellowgreen;
+  }
+  100% {
+    background-color: palevioletred;
+    left: 800px;
+  }
+}
