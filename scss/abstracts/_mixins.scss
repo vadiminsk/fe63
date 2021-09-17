@@ -1,1 +1,6 @@
 // Mixins
+@mixin buttons($width, $fontSize, $bgColor) {
+  width: $width;
+  font-size: $fontSize;
+  background-color: $bgColor;
+}

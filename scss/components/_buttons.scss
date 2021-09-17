@@ -1,0 +1,13 @@
+.btn {
+  &-blue {
+    @include buttons(200px, 16px, blue);
+  }
+
+  &-white {
+    @include buttons(300px, 20px, #fff);
+  }
+
+  &-green {
+    @include buttons(400px, 10px, green);
+  }
+}
